@@ -7,3 +7,459 @@
    Template: zerif-lite
    Version: 0.1 
    */
+
+// Selection colours (easy to forget)
+
+::selection {
+        color: #fff;
+        background: #fff;
+}
+::-moz-selection {
+        color: #fff;
+        background: #0B95F4;
+}
+
+//Buttons
+.custom-button {
+        display: inline-block !important;
+        margin: 10px;
+        padding: 13px 35px 13px 35px;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
+        text-transform: uppercase;
+}
+.red-btn {
+        background: #1B75BB;
+}
+.green-btn {
+        background: #1B75BB;
+}
+.blue-btn {
+        background: #3ab0e2;
+}
+.yellow-btn {
+        background: #e7ac44;
+}
+.red-btn,
+.green-btn,
+.blue-btn,
+.yellow-btn {
+        color: #fff !important;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+.blue-btn:hover {
+        color: #fff;
+        background: #1288b9;
+}
+.red-btn:hover {
+        color: #fff;
+        background: #0b95f4;
+}
+.green-btn:hover {
+        color: #fff;
+        background: #0b95f4;
+}
+.yellow-btn:hover {
+        color: #fff;
+        background: #d8951e;
+}
+.btn:hover {
+        box-shadow: none;
+}
+
+//Our Team
+.our-team a.zerif-default-links {
+        color: #1b75bb;
+}
+
+/** FOR TEXTS AND ICON FONTS **/
+.red-text {
+        color: #0b95f4;
+}
+.green-text {
+        color: #34d293;
+}
+.blue-text {
+        color: #3ab0e2;
+}
+.yellow-text {
+        color: #f7d861;
+}
+.dark-text {
+        color: #0b95f4;
+}
+.white-text {
+        color: #0B95F4;
+}
+
+
+
+/*** SECTION HEADERS ***/
+.section-header .section-legend {
+        margin-bottom: 0;
+        padding-top: 0;
+        color: #8ea3b2;
+        font-size: 16px;
+}
+
+
+/*---------------------------------------
+ **   Section: Home                  -----
+-----------------------------------------*/
+
+.header.header {
+        min-height: 76px;
+}
+.header.header > .navbar {
+        -webkit-box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
+        box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
+}
+.header-content-wrap {
+        position: relative;
+        padding: 285px 0 210px;
+        -webkit-box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
+        box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
+}
+
+//Nav Bar
+.navbar {
+        border: 0;
+        border-radius: 0 !important;
+        background: #0b95f4;
+        text-align: left;
+}
+//1670
+.navbar-inverse .navbar-nav > li > a {
+        padding: 0;
+        color: #ffffff;
+        line-height: 35px;
+}
+//1844
+.navbar-inverse .navbar-nav > li > a:focus {
+        color: #6d6e70;
+}
+.navbar-inverse .navbar-nav > li.current > a {
+        position: relative;
+        outline: none;
+        color: #135E91;
+}
+
+//1861
+li.current > a:before {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 12.5%;
+        width: 75%;
+        height: 2px;
+        margin: auto;
+        background: #135E91;
+        content: "";
+}
+ul.nav > li.current > a:before,
+.page ul.nav > li.current-menu-item > a:before,
+.single-post ul.nav > li.current-menu-item > a:before,
+.archive ul.nav > li.current-menu-item > a:before {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 12.5%;
+        width: 75%;
+        height: 2px;
+        margin: auto;
+        background: #135E91;
+        content: "";
+}
+/*----  SECTION:  HOME > INTRO AND SHORT MSGS   ----*/
+.intro-text,
+.intro-text a {
+        font-family: "Pacifico", Helvetica, sans-serif;
+        float: none;
+        z-index: 0;
+        color: #0B95F4;
+        font-size: 55px;
+        line-height: 65px;
+        text-align: center;
+}
+
+/* FOCUS BOX */
+.focus-box .service-icon {
+        display: block;
+        position: relative;
+        width: 145px;
+        height: 145px;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-bottom: 20px;
+        border: 10px solid #135e91;
+        border-radius: 50%;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+
+
+/* ON HOVER COLORED ROUNDED CIRCLE AROUND ICONS */
+.red,
+.green,
+.blue,
+.yellow {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+#focus span:nth-child(4n+1) .focus-box .service-icon:hover,
+#focus span:nth-child(4n+1) .focus-box .service-icon:focus {
+        border: 10px solid #e96656;
+}
+#focus span:nth-child(4n+2)  .focus-box .service-icon:hover,
+#focus span:nth-child(4n+2)  .focus-box .service-icon:focus {
+        border: 10px solid #34d293;
+}
+#focus span:nth-child(4n+3) .focus-box .service-icon:hover,
+#focus span:nth-child(4n+3) .focus-box .service-icon:focus {
+        border: 10px solid #3ab0e2;
+}
+#focus span:nth-child(4n+4) .focus-box .service-icon:hover,
+#focus span:nth-child(4n+4) .focus-box .service-icon:focus {
+        border: 10px solid #f7d861;
+}
+#focus span:nth-child(4n+1) .focus-box .red-border-bottom:before {
+        background: #ffffff;
+}
+#focus span:nth-child(4n+2) .focus-box .red-border-bottom:before {
+        background: #ffffff;
+}
+#focus span:nth-child(4n+3) .focus-box .red-border-bottom:before {
+        background: #ffffff;
+}
+#focus span:nth-child(4n+4) .focus-box .red-border-bottom:before {
+        background: #ffffff;
+}
+.focus-box h3 {
+        display: inline-block;
+        float: none;
+        position: relative;
+        width: auto;
+        margin-bottom: 15px;
+        margin-bottom: 30px;
+        color: #0b95f4;
+        background: none;
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+}
+.focus-box p {
+        color: #6D6E70;
+        font-size: 14px;
+}
+
+/*---------------------------------------
+ **   Secction:  Separator one        -----
+-----------------------------------------*/
+
+.separator-one {
+        padding: 100px 0 100px 0;
+        background: rgba(142, 163, 178, 0.8);
+        display: none;
+}
+.separator-one .green-btn {
+        background: #135e91;
+}
+.separator-one .green-btn:hover {
+        background: #0b95f4;
+}
+.separator-one .text {
+        max-width: 800px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding: 0;
+        color: #fff;
+        line-height: 34px;
+}
+.separator-one .text a {
+        font-size: 24px;
+}
+
+/*---------------------------------------
+ **   Section: About us;              -----
+-----------------------------------------*/
+
+.about-us {
+        color: #fff;
+        background: #fff;
+}
+.about-us .big-intro {
+        margin-top: -15px;
+        font-size: 60px;
+        font-weight: 300;
+        line-height: normal;
+        text-align: right;
+}
+.about-us .section-header .section-legend {
+        color: #6D6E70;
+}
+.about-us p {
+        color: #6d6e70;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: left;
+}
+.about-us .column {
+        margin-bottom: 78px;
+}
+.about-us .col-md-12.zerif-rtl-big-title .big-intro,
+.about-us .col-md-12.zerif_about_us_center p {
+        text-align: center;
+}
+
+
+.team-member .member-details .position{
+        color: #8EA3B2;
+}
+.team-member h3 {
+        position: relative;
+        margin-top: 15px;
+        color: #0B95F4;
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+}
+
+.our-team .row > span:nth-child(4n+1) .red-border-bottom:before {
+        background: #ffffff;
+}
+.our-team .row > span:nth-child(4n+2) .red-border-bottom:before {
+        background: #ffffff;
+}
+.our-team .row > span:nth-child(4n+3) .red-border-bottom:before {
+        background: #ffffff;
+}
+.our-team .row > span:nth-child(4n+4) .red-border-bottom:before {
+        background: #ffffff;
+}
+
+//Testimonials
+
+.testimonial {
+        padding-bottom: 90px;
+        background: #ffffff;
+}
+#client-feedbacks .feedback-box,
+.testimonial .widget_zerif_testim-widget {
+        display: inline-block;
+        z-index: 5;
+        width: 30%;
+        margin: 13px;
+        padding: 25px;
+        border-radius: 4px;
+        background: #6d6e70;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        text-align: left;
+        vertical-align: top;
+}
+.testimonial .widget_zerif_testim-widget .message {
+        color: #ffffff;
+        font-size: 15px;
+}
+.testimonial .widget_zerif_testim-widget .client-name {
+        color: #ffffff;
+        font-family: "Homemade Apple", serif;
+}
+
+
+/*----------------------------------------
+ **   Purchase now           -----
+-----------------------------------------*/
+
+.purchase-now {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background: #8ea3b2;
+        display: none;
+}
+.purchase-now h3 {
+        margin-top: 14px;
+        line-height: 40px;
+        text-align: left;
+}
+.purchase-now .red-btn {
+        float: right;
+        background: #135e91;
+}
+.purchase-now .red-btn:hover {
+        background: #0b95f4;
+}
+.ribbon-without-button h3 {
+        text-align: center;
+}
+.ribbon-without-button .col-md-9 {
+        width: 100%;
+}
+
+
+/*----------------------------------------
+ **   Contact us             -----
+-----------------------------------------*/
+
+.contact-us {
+        padding-bottom: 95px;
+        background: rgba(142, 163, 178, 0.5);
+}
+.contact-us .section-header .section-legend {
+        color: #fff;
+}
+.contact-us .input-box,
+textarea {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 4px;
+}
+.contact-us textarea {
+        border: 1px solid transparent;
+}
+.contact-us .custom-button {
+        float: right;
+        margin-right: 15px;
+}
+.zerif-g-recaptcha {
+        display: none;
+        margin-left: 15px;
+}
+.contact-us .notification p {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 3px;
+        color: #fff;
+}
+.contact-us .error p {
+        background: #e96656;
+}
+.contact-us .success p {
+        background: #34d293;
+}
+.contact_submit_wrap {
+        float: right;
+}
+
+/*---------------------------------------
+ **   Footer           -----
+-----------------------------------------*/
+
+#footer {
+        background: #135e91;
+        line-height: 20px;
+}
+.company-details {
+        padding-top: 67px;
+        padding-bottom: 30px;
+        color: #ffffff;
+}
+.company-details a {
+        color: #939393;
+        text-decoration: none;
+}
